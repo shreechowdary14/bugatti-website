@@ -6,9 +6,9 @@ import "aos/dist/aos.css";
 
 import hero from "./assets/bugatti.jpeg";
 
-import chiron from "./assets/chiron.png";
-import divo from "./assets/divo.png";
-import bolide from "./assets/bolide.png";
+import chiron from "./assets/Chiron.png";
+import divo from "./assets/Divo.png";
+import bolide from "./assets/Bolide.png";
 
 import gallery1 from "./assets/gallery1.png";
 import gallery2 from "./assets/gallery2.png";
