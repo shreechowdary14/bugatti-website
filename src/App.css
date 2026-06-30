@@ -357,3 +357,644 @@ footer p {
   }
 
 }
+/* ===== PREMIUM ANIMATIONS ===== */
+
+/* Hero background zoom */
+.hero {
+  animation: heroZoom 15s infinite alternate;
+}
+
+@keyframes heroZoom {
+  from {
+    background-size: 100%;
+  }
+  to {
+    background-size: 115%;
+  }
+}
+
+/* Floating car images */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.card img {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Premium button effect */
+button {
+  transition: all 0.4s ease;
+}
+
+button:hover {
+  background: white;
+  transform: scale(1.1);
+  box-shadow: 0 0 30px gold;
+}
+
+/* Gallery cinematic effect */
+.gallery-grid img {
+  transition: all 0.6s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.08) rotate(2deg);
+  box-shadow: 0 15px 35px rgba(255,215,0,0.4);
+}
+
+/* Navigation underline effect */
+nav ul li a {
+  position: relative;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -5px;
+  background: gold;
+  transition: 0.4s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* Rotating logo */
+nav h3 {
+  transition: 1s;
+}
+
+nav h3:hover {
+  transform: rotate(360deg);
+  color: gold;
+}
+
+/* Performance card glow */
+.stat:hover {
+  transform: translateY(-15px) scale(1.05);
+}
+
+/* Contact form glow */
+.contact input,
+.contact textarea {
+  transition: 0.4s;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  box-shadow: 0 0 20px gold;
+}
+
+/* Footer animation */
+footer h3 {
+  transition: 0.5s;
+}
+
+footer h3:hover {
+  color: gold;
+  letter-spacing: 10px;
+}
+/* ===== ULTRA PREMIUM EFFECTS ===== */
+
+/* Glowing Bugatti title */
+.overlay h1 {
+  text-shadow:
+    0 0 15px gold,
+    0 0 30px rgba(255,215,0,.8),
+    0 0 60px rgba(255,215,0,.5);
+  animation: titleGlow 3s infinite alternate;
+}
+
+@keyframes titleGlow {
+  from {
+    letter-spacing: 5px;
+  }
+  to {
+    letter-spacing: 12px;
+  }
+}
+
+/* Glassmorphism cards */
+.card {
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* 3D card effect */
+.card:hover {
+  transform:
+    translateY(-20px)
+    rotateX(8deg)
+    rotateY(8deg);
+}
+
+/* Shining button */
+button {
+  position: relative;
+  overflow: hidden;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 50%;
+  height: 100%;
+  background: rgba(255,255,255,.4);
+  transform: skewX(-25deg);
+  transition: .8s;
+}
+
+button:hover::before {
+  left: 130%;
+}
+
+/* Hero overlay fade animation */
+.overlay {
+  animation: fadeHero 2s ease;
+}
+
+@keyframes fadeHero {
+  from {
+    opacity: 0;
+    transform: translateY(80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Gallery premium hover */
+.gallery-grid img:hover {
+  filter: brightness(1.2);
+}
+
+/* Floating stats */
+@keyframes statFloat {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.stat {
+  animation: statFloat 5s ease-in-out infinite;
+}
+
+/* Footer glow */
+footer h3 {
+  text-shadow: 0 0 20px gold;
+}
+
+/* Smooth page fade */
+body {
+  animation: pageLoad 1.5s ease;
+}
+
+@keyframes pageLoad {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* ================= ULTRA PREMIUM ANIMATIONS ================= */
+
+/* Hero background slow zoom */
+.hero {
+  animation: heroZoom 18s infinite alternate;
+}
+
+@keyframes heroZoom {
+  from {
+    background-size: 100%;
+  }
+  to {
+    background-size: 110%;
+  }
+}
+
+/* Softer Bugatti title glow */
+.overlay h1 {
+  text-shadow:
+    0 0 8px rgba(255,215,0,0.5),
+    0 0 18px rgba(255,215,0,0.3);
+  animation: titleGlow 3s infinite alternate;
+}
+
+@keyframes titleGlow {
+  from {
+    letter-spacing: 5px;
+  }
+  to {
+    letter-spacing: 8px;
+  }
+}
+
+/* Hero section fade-in */
+.overlay {
+  animation: heroFade 2s ease;
+}
+
+@keyframes heroFade {
+  from {
+    opacity: 0;
+    transform: translateY(80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Floating car images */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.card img {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Glassmorphism cards */
+.card {
+  position: relative;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+/* Card shine effect */
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 50%;
+  height: 100%;
+  background: rgba(255,255,255,0.1);
+  transform: skewX(-25deg);
+  transition: .8s;
+}
+
+.card:hover::before {
+  left: 160%;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 20px 50px rgba(255,215,0,.35);
+}
+
+/* Premium buttons */
+button {
+  position: relative;
+  overflow: hidden;
+  transition: all .4s ease;
+}
+
+button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 25px rgba(255,215,0,.7);
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 50%;
+  height: 100%;
+  background: rgba(255,255,255,.4);
+  transform: skewX(-25deg);
+  transition: .8s;
+}
+
+button:hover::before {
+  left: 130%;
+}
+
+/* Navigation underline */
+nav ul li a {
+  position: relative;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -5px;
+  background: gold;
+  transition: .4s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* Logo effect */
+nav h3 {
+  transition: .5s;
+}
+
+nav h3:hover {
+  color: gold;
+  transform: scale(1.08);
+}
+
+/* Gallery premium hover */
+.gallery-grid img {
+  transition: all .6s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.08) rotate(2deg);
+  filter: brightness(1.15);
+  box-shadow: 0 20px 40px rgba(255,215,0,.4);
+}
+
+/* Performance cards */
+.stat {
+  animation: statFloat 5s ease-in-out infinite;
+}
+
+@keyframes statFloat {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.stat h1 {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  50% {
+    transform: scale(1.08);
+  }
+}
+
+/* Contact glow */
+.contact input,
+.contact textarea {
+  transition: .4s;
+}
+
+.contact input:hover,
+.contact textarea:hover {
+  transform: translateY(-3px);
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  box-shadow: 0 0 20px rgba(255,215,0,.6);
+}
+
+/* Footer */
+footer h3 {
+  transition: .5s;
+}
+
+footer h3:hover {
+  color: gold;
+  letter-spacing: 10px;
+}
+
+/* Page load animation */
+body {
+  animation: pageLoad 1.2s ease;
+}
+
+@keyframes pageLoad {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* ===== EXTRA PREMIUM EFFECTS ===== */
+
+/* Hero background zoom */
+.hero {
+  animation: heroZoom 18s infinite alternate;
+}
+
+@keyframes heroZoom {
+  from {
+    background-size: 100%;
+  }
+  to {
+    background-size: 110%;
+  }
+}
+
+/* Softer Bugatti title glow */
+.overlay h1 {
+  text-shadow:
+    0 0 8px rgba(255,215,0,0.5),
+    0 0 18px rgba(255,215,0,0.3);
+  animation: titleGlow 3s infinite alternate;
+}
+
+@keyframes titleGlow {
+  from {
+    letter-spacing: 5px;
+  }
+  to {
+    letter-spacing: 8px;
+  }
+}
+
+/* Hero fade */
+.overlay {
+  animation: heroFade 2s ease;
+}
+
+@keyframes heroFade {
+  from {
+    opacity: 0;
+    transform: translateY(80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Card shine effect */
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 50%;
+  height: 100%;
+  background: rgba(255,255,255,0.1);
+  transform: skewX(-25deg);
+  transition: .8s;
+}
+
+.card:hover::before {
+  left: 160%;
+}
+
+/* Premium gallery */
+.gallery-grid img:hover {
+  filter: brightness(1.15);
+}
+
+/* Performance number pulse */
+.stat h1 {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  50% {
+    transform: scale(1.08);
+  }
+}
+
+/* Footer glow */
+footer h3:hover {
+  text-shadow: 0 0 20px gold;
+}
+/* ===== EXTRA PREMIUM EFFECTS ===== */
+
+/* Hero background zoom */
+.hero {
+  animation: heroZoom 18s infinite alternate;
+}
+
+@keyframes heroZoom {
+  from {
+    background-size: 100%;
+  }
+  to {
+    background-size: 110%;
+  }
+}
+
+/* Softer Bugatti title glow */
+.overlay h1 {
+  text-shadow:
+    0 0 8px rgba(255,215,0,0.5),
+    0 0 18px rgba(255,215,0,0.3);
+  animation: titleGlow 3s infinite alternate;
+}
+
+@keyframes titleGlow {
+  from {
+    letter-spacing: 5px;
+  }
+  to {
+    letter-spacing: 8px;
+  }
+}
+
+/* Hero fade */
+.overlay {
+  animation: heroFade 2s ease;
+}
+
+@keyframes heroFade {
+  from {
+    opacity: 0;
+    transform: translateY(80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Card shine effect */
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 50%;
+  height: 100%;
+  background: rgba(255,255,255,0.1);
+  transform: skewX(-25deg);
+  transition: .8s;
+}
+
+.card:hover::before {
+  left: 160%;
+}
+
+/* Premium gallery */
+.gallery-grid img:hover {
+  filter: brightness(1.15);
+}
+
+/* Performance number pulse */
+.stat h1 {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  50% {
+    transform: scale(1.08);
+  }
+}
+
+/* Footer glow */
+footer h3:hover {
+  text-shadow: 0 0 20px gold;
+}
